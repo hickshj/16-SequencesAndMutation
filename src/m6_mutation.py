@@ -193,10 +193,13 @@ def MUTATE_replace_negatives_by_zeros(numbers):
 
     Precondition: The argument is a list of numbers.
     """
-    # TODO: 3. First, READ THE ABOVE TEST CODE.
+    # Done: 3. First, READ THE ABOVE TEST CODE.
     #          Make sure that you understand it.
     #          Then, IMPLEMENT and test THIS FUNCTION
     #          (using the above code for testing).
+    for k in range(len(numbers)):
+        if numbers[k] < 0:
+            numbers[k] = 0
 
 
 # ----------------------------------------------------------------------
