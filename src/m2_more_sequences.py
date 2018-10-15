@@ -187,10 +187,17 @@ def index_of_largest_number(numbers, n):
 
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done: 3. Implement and test this function.
     #     The testing code is already written for you (above).
     # ------------------------------------------------------------------
-
+    q = 0
+    w = 0
+    for k in range(n):
+        a = numbers[k]
+        if a > w:
+            q = k
+            w = a
+    return q
 
 
 # ----------------------------------------------------------------------
